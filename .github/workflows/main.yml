@@ -34,11 +34,11 @@ jobs:
   # uses: Borales/actions-yarn@4965e1a0f0ae9c422a9a5748ebd1fb5e097d22b9        uses: Borales/actions-yarn@v2.3.0
       with:
         cmd: install 
-     -name: Creating build
-      run: yarn build  
+         -name:Creating build
+        run: yarn build  
 
-     -name: installing surge  
-      run: npm install -g surge
+        -name: installing surge  
+      run:npm install -g surge
 
-     -name: deploying on surge
-      run: surge ./build http://rolarupa.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
+       -name:deploying on surge
+           run:surge ./build http://rolarupa.surge.sh/ --token ${{secrets.SURGE_TOKEN}}
